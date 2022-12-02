@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 import { useAuth } from "../../hooks/auth";
 
+import backgroundImg from "../../assets/background.png"
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
 
@@ -46,7 +47,9 @@ export function SignIn() {
         <Link to="/register">Criar conta</Link>
       </Form>
 
-      <Background />
+      <Background>
+        <img src={backgroundImg} alt="background image" />
+      </Background>
     </Container>
   );
 }

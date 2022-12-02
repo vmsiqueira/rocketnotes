@@ -1,9 +1,11 @@
 import styled from "styled-components";
-import backgroundImg from "../../assets/background.png"
+
 
 export const Container = styled.div`
   height: 100vh;
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 `;
 
@@ -37,7 +39,12 @@ export const Form = styled.form`
 `;
 
 export const Background = styled.div`
-  flex: 1;
-  background: url(${backgroundImg}) no-repeat center center;
-  background-size: cover;
+  overflow-y: hidden;
+  height: 100%;
+  
+  img {
+    width: 1280px;
+    flex: 1;
+    opacity: 0.4;
+  }
 `;

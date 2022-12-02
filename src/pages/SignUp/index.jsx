@@ -3,6 +3,7 @@ import { FiLogIn, FiMail, FiLock, FiUser } from "react-icons/fi";
 import { Link, useNavigate } from "react-router-dom";
 import { api } from "../../services/api";
 
+import backgroundImg from "../../assets/background.png"
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
 
@@ -38,7 +39,9 @@ export function SignUp() {
 
   return(
     <Container>
-      <Background />
+      <Background>
+        <img src={backgroundImg} alt="backgroundImg" />
+      </Background>
       <Form>
         <h1>RocketNotes</h1>
         <p>Aplicação para salvar e gerenciar seu links úteis</p>
